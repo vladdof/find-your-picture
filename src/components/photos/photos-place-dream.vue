@@ -1,14 +1,14 @@
 <template>
   <section class="content-section margin-y--6">
     <h2 class="centered">Daydream by Place</h2>
-    <ul class="place-list">
+    <ul class="photos-place-list place-list">
       <li
         v-for="(place, index) in popularPlaces"
         :key="place.place_id"
         class="place-list__item">
         <button
           @click="updateSelectedPlaceIndex(index)"
-          class="place-list__item__button"
+          class="place-list__item-button"
           :class="{'selected': index === selectedPlaceIndex}">
             {{place.name}}
         </button>
@@ -120,38 +120,5 @@ export default {
 </script>
 
 <style lang="scss">
-.btn--dark-grey {
-  background: #2c3e50;
-  color: white;
-  text-decoration: none;
-}
-.place-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.place-list__item {
-  margin: 0 .5rem;
-}
-.place-list__item__button {
-  background: transparent;
-  font-size: 1rem;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: .5rem .75rem;
-  &.selected {
-    background: #F0F0F0;
-  }
-  transition: all .3s ease;
-  &:hover {
-    color: #42b983;
-  }
-}
+  @import 'photos-place-dream';
 </style>

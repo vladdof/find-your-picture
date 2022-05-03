@@ -48,11 +48,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.centered { text-align: center; }
-.margin-y--6 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-</style>

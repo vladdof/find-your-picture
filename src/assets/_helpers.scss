@@ -1,0 +1,28 @@
+.centered {
+  text-align: center;
+}
+
+.margin-y--6 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.btn--dark-grey {
+  background: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+}
+
+.skeleton {
+  animation: skeleton-glow 1s linear infinite alternate;
+  background-clip: border-box;
+  background-clip: padding-box !important;
+  background: rgba(206,217,224,.2) !important;
+  border-color: rgba(206,217,224,.2) !important;
+  border-radius: 2px;
+  box-shadow: none !important;
+  color: transparent !important;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+}

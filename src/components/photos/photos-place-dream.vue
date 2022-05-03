@@ -62,28 +62,22 @@ export default {
       selectedPlaceIndex: 0,
       popularPlaces: [
         {
-          name: 'Agra',
-          place_id: 'S4OOvxtTULO18fQG',
+          name: 'London',
         },
         {
-          name: 'Bali',
-          place_id: 'lm4_wrhTUb4oe5pO',
+          name: 'Berlin',
         },
         {
           name: 'Rio de Janeiro',
-          place_id: 'mAqmHW5VV78OT5o',
         },
         {
           name: 'Paris',
-          place_id: 'EsIQUYZXU79_kEA',
         },
         {
           name: 'Tokyo',
-          place_id: 'FRthiQZQU7uKHvmP',
         },
         {
-          name: 'Tolanaro',
-          place_id: 'qdHKy7VQUbxPQVBX',
+          name: 'Moscow',
         },
       ],
     };
@@ -100,7 +94,7 @@ export default {
     fetchPlacePhotos() {
       this.loading = true;
       flickr('photos.search', {
-        place_id: this.selectedPlace.place_id,
+        tags: this.selectedPlace.name,
         extras: 'url_n, owner_name, description, date_taken, views',
         page: 1,
         per_page: 3,

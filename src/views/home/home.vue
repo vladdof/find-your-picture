@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { Hero, PhotosRecent, PhotosPlaceDream } from '../components';
+import { Hero, PhotosRecent, PhotosPlaceDream } from '../../components';
 
 export default {
   name: 'home',

@@ -1,12 +1,13 @@
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import SearchResults from '@/views/search-results/search-results.vue';
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
+describe('SearchResults cmp', () => {
+  test('renders cmp with right tag prop', () => {
+    const tag = 'cat';
+    const wrapper = shallowMount(SearchResults, {
+      propsData: { tag },
     });
-    expect(wrapper.text()).toMatch(msg);
+
+    expect(wrapper.text()).toMatch(tag);
   });
 });

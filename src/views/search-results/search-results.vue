@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import flickr from '../flickr';
-import { ImageCard } from '../components';
+import flickr from '../../flickr';
+import { ImageCard } from '../../components';
 
 export default {
   name: 'search-results',
@@ -46,7 +46,6 @@ export default {
   },
   computed: {
     cleanImages() {
-      console.log(this.images);
       return this.images.filter((image) => image.url_n);
     },
     isTagEmpty() {

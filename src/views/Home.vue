@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <hero
+      title="Welcome to Instaflickr"
+      subtitle="A fake photo app"
+    />
+    <div class="wrapper">
+      <photos-recent />
+      <photos-place-dream />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import { Hero, PhotosRecent, PhotosPlaceDream } from '../components';
 
 export default {
-  name: 'Home',
+  name: 'home',
   components: {
-    HelloWorld,
+    Hero,
+    PhotosPlaceDream,
+    PhotosRecent,
   },
 };
 </script>
+
+<style lang="scss">
+  @import 'home';
+</style>

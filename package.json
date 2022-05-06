@@ -2,17 +2,19 @@
   "name": "vue-flickr",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vladdof.github.io/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "axios": "^0.27.2"
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.15",
@@ -26,6 +28,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "gh-pages": "^3.2.3",
     "node-sass": "6",
     "sass-loader": "10",
     "vue-template-compiler": "^2.6.11"
